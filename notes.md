@@ -36,5 +36,16 @@ When training, the perceptron learns by adjusting its weights and bias based on 
 A weight is assigned to each input of the perceptron (significance of the input to the output). The perceptron's output is a weighted sum of the inputs that have been run through an activation function to decide whether or not the perceptron will fire. 
 It computes the weighted sum of its inputs as:
 ```
-z = w_1x_1 + w_1x_2 + ... + w_nx_n = X^TW
+    z = w_1x_1 + w_1x_2 + ... + w_nx_n = X^TW
+```
+The step function compares this weighted sum to the threshold, which outputs 1 if the input is larger than a threshold value and 0 otherwise. 
+The most common step function is Heaviside step function:
+```
+             0  if z < Threshold
+    h(z) = {
+             1  if z > Threshold
+```
+A perceptron has a single layer of threshold log units where each TLU is connected to all outputs. 
+```
+
 ```
