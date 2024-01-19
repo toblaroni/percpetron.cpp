@@ -6,3 +6,11 @@
         2. Keep adjusting the weights until we get 0 errors or a low error count
         3. Make predictions on unseen data
 */
+
+#include <stdio.h>
+
+int main(void) {
+   printf("Hello world\n");
+
+   return 0;
+}
